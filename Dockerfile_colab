@@ -1,0 +1,4 @@
+FROM us-docker.pkg.dev/colab-images/public/runtime
+# run this command os.system("python3.10 -m pip install omegaconf pytorch_lightning biopython ml_collections einops py3Dmol modelcif && python3.10 -m pip install git+https://github.com/NVIDIA/dllogger.git && python3.10 -m pip install git+https://github.com/sokrypton/openfold.git && python3.10 -m pip install git+https://github.com/sokrypton/esm.git && python3.10 -m pip install dm-tree")
+RUN python3.10 -m "import os; os.system('python3.10 -m pip install omegaconf pytorch_lightning biopython ml_collections einops py3Dmol modelcif && python3.10 -m pip install git+https://github.com/NVIDIA/dllogger.git && python3.10 -m pip install git+https://github.com/sokrypton/openfold.git && python3.10 -m pip install git+https://github.com/sokrypton/esm.git && python3.10 -m pip install dm-tree')"
+
